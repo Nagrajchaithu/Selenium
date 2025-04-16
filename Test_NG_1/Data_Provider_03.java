@@ -29,10 +29,7 @@ public class Data_Provider_03 {
 		
 		String data[][]= {{"Admin1","password1"},{"Admin2","password2"},{"Admin3","password3"}};
 		
-		
-		
-	
-	return data;
+		return data;
 		
 	}
 

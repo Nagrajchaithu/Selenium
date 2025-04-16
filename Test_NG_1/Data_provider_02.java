@@ -11,10 +11,7 @@ public class Data_provider_02 {
 		System.out.println(username);
 		System.out.println(password);
 		System.out.println("----------------------------------------------------------");
-		
-		
-		
-	}
+		}
 	@DataProvider(name="devara")
 	
 	public String[][] loginpage(){
@@ -36,11 +33,6 @@ public class Data_provider_02 {
 		data[2][1]="hari@1234";
 		
 		return data;
-		
-		
-		
-		
-		
-	}
+		}
 
 }

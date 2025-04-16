@@ -14,7 +14,7 @@ public class Basic_loginpage  {
 		 WebDriver dr =new ChromeDriver();
 		 dr.get("https://demo.cyclos.org/ui/home");
 		 dr.manage().window().maximize();
-		 dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		 dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		 dr.findElement(By.xpath("//div[text()=' Login ']")).click();
 		 Basic_login_test  bb= new Basic_login_test(dr) ;
 		bb.getusername("demo");

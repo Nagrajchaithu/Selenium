@@ -10,8 +10,8 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ReadAll_Exceldata {
-
-	public static void main(String[] args) throws Throwable{
+	
+ public static void main(String[] args) throws Throwable{
 		File fi= new File("./Excel_Folder/data1.xlsx");
 		FileInputStream f1= new FileInputStream(fi);
 	
@@ -19,7 +19,7 @@ public class ReadAll_Exceldata {
          Sheet shee= wb.getSheetAt(0);
          for(int i=0;i<shee.getLastRowNum();i++) {
         	    Row row =shee.getRow(i);
-        	    
+        	     
         	    for(int j=0;j<row.getLastCellNum();j++) {
         	    	
         	    	Cell cell=row.getCell(j);

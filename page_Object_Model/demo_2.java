@@ -1,4 +1,4 @@
-package Test_NG_2;
+package page_Object_Model;
 
 import java.time.Duration;
 
@@ -7,29 +7,29 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class practise_1 {
+import basics.login;
 
-	
+public class demo_2 {
+	WebDriver dr;
 	@Test
-	public void loginpage() {
-	WebDriver 	dr= new ChromeDriver();
+	public void mm() {
+		dr=new ChromeDriver();
 		dr.get("https://demo.cyclos.org/ui/home");
 		dr.manage().window().maximize();
 		dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		dr.findElement(By.xpath("//div[text()=' Login ']")).click();
-		practise_2 mm= new practise_2 (dr);
-		mm.getuser("demo");
-		mm.getpass("1234");
-		mm.click();
+		demo_1 dd= new demo_1(dr);
+		dd.entr_usrname();
+		dd.Enter_pass();
+		dd.button();
+		
+
+		
+		
 		
 		
 		
 		
 	}
-	
-	
-	
-	
-
 
 }

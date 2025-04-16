@@ -4,13 +4,14 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Alert_1 {
+public class Alert_1 
+{
 
 	public static void main(String[] args) {
 		WebDriver dr = new ChromeDriver();
 		
 		
-//if we want just accept or reject the alerts
+//if we want just accept or dismiss the alerts
 		dr.switchTo().alert().accept();
 		dr.switchTo().alert().dismiss();
 		

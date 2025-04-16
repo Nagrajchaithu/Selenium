@@ -28,7 +28,7 @@ public class Smaple_Window_Handling {
         	   }
         	   
            }
-           //dr.switchTo().window(parent);
+           dr.switchTo().window(parent);
            Thread.sleep(3000);
            Actions ac = new Actions(dr);
            ac.scrollByAmount(0, 1000).build().perform();

@@ -27,7 +27,7 @@ public	static WebDriver dr;
 	{
 		return dr;
 	}
-	@After()
+	@After
 	public void post() {
 		dr.close();
 	}

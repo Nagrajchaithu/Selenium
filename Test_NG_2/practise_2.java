@@ -1,22 +1,38 @@
 package Test_NG_2;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 public class practise_2 {
-	@Test 
-	
-	public void aa() {
-		System.out.println("test 3");
+	 
+	@FindBy(xpath="//input[@type='text']")
+	WebElement username;
+	public void getuser(String str) {
+		username.sendKeys(str);
 	}
 	
-	@Test 
-	public void dd() {
-		System.out.println("test 4");
+	@FindBy(xpath="//input[@type='password']")
+	WebElement password ;
+	public void  getpass(String stri) {
+		password.sendKeys(stri);
 	}
-	@Test (dependsOnMethods="dd")
 	
-	public void ll() {
-		System.out.println("test 5");
+	@FindBy(xpath="//span[text()='Submit']")
+	WebElement clickable;
+	public void click() {
+		clickable.click();
+	}
+	
+	practise_2 (WebDriver dj) {
+		PageFactory.initElements(dj, this);
+		
+	}
+	
+	
+	
 
-}
+
 }

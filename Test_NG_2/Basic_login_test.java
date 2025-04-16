@@ -55,7 +55,7 @@ public class Basic_login_test {
 	public void receivepayment() {
 		nn.click();
 	
-	}
+	}	
 	
 	@FindBy(xpath="//div[text()='Scheduled payments']")
 	WebElement aa;
@@ -63,7 +63,7 @@ public class Basic_login_test {
 		aa.click();
 	}
 	
-	  Basic_login_test (WebDriver driver) {
+	 public  Basic_login_test (WebDriver driver) {
 		
 		PageFactory.initElements(driver, this);
 		

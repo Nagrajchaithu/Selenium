@@ -1,5 +1,7 @@
 package Drop_Down;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,8 +14,8 @@ public class drop_down1 {
 		WebDriver dr = new ChromeDriver();
 		dr.get("https://www.shadi.com/");
 		dr.manage().window().maximize();
+		dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		dr.findElement(By.xpath("//a[text()='Join Now']")).click();
-		
 		WebElement wb =dr.findElement(By.xpath("//select[@id='dob_m']"));
 		Select sc= new Select(wb);
 		sc.selectByIndex(4);
@@ -26,6 +28,6 @@ public class drop_down1 {
 		
 		
 
-	}
+  }
 
 }

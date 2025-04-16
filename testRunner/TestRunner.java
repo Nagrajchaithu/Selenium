@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="./Feature/cyclose.feature",
+		features="./Feature/lgn.feature",
 		glue={"stepDefinition","application_Hooks"} ,  //name of package 
 		tags="@reg"
 		)
